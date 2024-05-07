@@ -2,7 +2,7 @@ body{
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: rgb(255, 255, 255);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 
@@ -446,9 +446,10 @@ z-index: 1;
 
 /* Hello */
 .hello{
-  width: 100px;
-  /* margin-left: 100px; */
+  width: 90px;
+  margin-left: -35px;
   /* border: 1px solid green; */
+  /* padding: 5px; */
   /* transform: rotate(360deg); */
   transition: 0.9s ease-in;
   animation-name: dharshini;
@@ -473,12 +474,12 @@ z-index: 1;
 /* screen1 */
 .screen_background{
   /* width: 100%; */
-  height: 250vh;
+  height: 379vh;
    background: #f8f8f8;
    /* z-index: -1; */
    position: absolute;
    transition: 0.3s;
-   /* border: 1px solid green; */
+   /* border: 4px solid green; */
    margin-top: 5px;
    right: 0px;
    left: 0px;
@@ -490,7 +491,7 @@ z-index: 1;
 .screen1{
   margin: 10px 10px;
   /* width: 100%; */
-  padding: 500px 100px;
+  /* padding: 500px 100px; */
   /* border: 3px solid rgb(216, 161, 21); */
   box-sizing: border-box;
   position: relative;
@@ -508,11 +509,12 @@ z-index: 1;
   top: 0;
   left: 0;
   margin: 5px;
-  position: absolute;
+  /* position: absolute; */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 7px;
+  z-index: 2;
 }
 
 .video{
@@ -920,7 +922,8 @@ margin: 5px;
   right: 0;
   margin: 5px;
   padding: 5px;
-  position: absolute;
+  /* position: absolute; */
+  z-index: 1;
 }
 
 .comments_header{
@@ -1085,7 +1088,7 @@ margin: 5px;
 .live_Chat_container{
   /* border: 1px solid rgb(160, 33, 33); */
   /* width: 100%; */
-  height: 260px;
+  height: 210px;
   padding: 4px;
   overflow-y: scroll;
   display: flex;
@@ -1113,7 +1116,242 @@ margin: 5px;
   /* border: 1px solid rgb(35, 160, 33); */
 }
 
+.trending_news{
+  margin-top: 2px;
+  /* border: 1px solid rgb(35, 160, 33); */
+  height: 200px;
+  padding: 5px;
+  box-sizing: border-box;
+
+}
+
+.heading_trending_news{
+  /* border: 1px solid rgb(35, 160, 33); */
+  margin: 0px;
+  margin-bottom: 5px;
+}
 
 
+
+.trending_news_container{
+  /* border: 1px solid rgb(228, 228, 7); */
+  padding: 5px; 
+  display: flex; 
+  gap: 10px;
+  overflow-x: auto;
+  height: 85%;
+  box-sizing: border-box;
+  
+}
+
+.automatically_playing_news_container{
+  /* border: 1px solid rgb(16, 93, 225); */
+  padding: 5px;
+  height: 90%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  animation-name: rabidnath ;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear ;
+}
+
+@keyframes rabidnath{
+  0%{
+  }
+  
+  100%{
+    transform: translateX(-41%);
+  }
+
+}
+
+.trending_news_container::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+
+.rabindranath_container{
+  /* border: 1px solid rgb(251, 15, 15); */
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quotes{
+  /* border: 1px solid rgb(237, 174, 2); */
+  font-size: small;
+  color: gray;
+  box-sizing: border-box;
+  margin: 0px;
+}
 /* rightside */
  /* screen1 */
+
+
+ .footer{
+  /* border: 1px solid rgb(197, 10, 218); */
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+ }
+
+
+
+
+
+ /* Podcasts */
+ .podcasts{
+  /* border: 1px solid rgb(197, 10, 218); */
+  /* width: 100%; */
+  /* padding: 50px 50px; */
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.podcasts_heading_Container{
+  /* border: 1px solid rgb(10, 218, 24); */
+  text-align: center;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.podcasts_size{
+  /* border: 1px solid rgb(218, 10, 121); */
+  margin: 0px;
+}
+
+.podcasts_image_container{
+  /* border: 1px solid rgb(218, 10, 121); */
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.border-radius{
+  border-radius: 20px;
+}
+/* Podcasts */
+
+
+
+
+
+ /* popular_Channels */
+ .popular_Channels{
+  /* border: 1px solid rgb(197, 10, 218); */
+  /* width: 100%; */
+  /* padding: 50px 50px; */
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.popular_Channels_heading{
+  /* border: 1px solid rgb(10, 218, 24); */
+  text-align: center;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.popular_Channels_size{
+  /* border: 1px solid rgb(218, 10, 121); */
+  margin: 0px;
+}
+
+.popular_Channels_container{
+  /* border: 1px solid rgb(218, 10, 121); */
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+
+}
+/* popular_Channels */
+
+
+
+
+/* MySubscriber */
+.mySubscriber{
+  /* border: 1px solid rgb(197, 10, 218); */
+  /* width: 100%; */
+  /* padding: 50px 50px; */
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mySubscriber_heading{
+  /* border: 1px solid rgb(10, 218, 24); */
+  text-align: center;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.mysubscription_size{
+  /* border: 1px solid rgb(218, 10, 121); */
+  margin: 0px;
+}
+
+.my_Subscription_logo_container{
+  /* border: 1px solid rgb(197, 10, 218); */
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.my_Subscription_logo{
+  /* border: 1px solid rgb(197, 10, 218); */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mysub_logo_para{
+  /* border: 1px solid rgb(197, 10, 218); */
+  padding: 5px;
+  text-align: center;
+}
+/* MySubscriber */
+
+
+
+ /* your_Playlists */
+ .your_Playlists{
+  /* border: 1px solid rgb(197, 10, 218); */
+  /* width: 100%; */
+  /* padding: 50px 50px; */
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.your_Playlists_heading{
+  /* border: 1px solid rgb(10, 218, 24); */
+  text-align: center;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.your_Playlists_size{
+  /* border: 1px solid rgb(218, 10, 121); */
+  margin: 0px;
+}
+/* your_Playlists */
